@@ -30,4 +30,6 @@ ReadIMU requires an Arduino UNO (LINK)
 
 record_data requires a Raspberry PI 3 (LINK)
 
+Configure the source code ORBSLAM2 with some complementary files in _video_slam_complementary_ folder
+
 

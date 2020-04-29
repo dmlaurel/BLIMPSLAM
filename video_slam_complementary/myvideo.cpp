@@ -18,11 +18,11 @@ using namespace std;
 
 // parameter and dictionary files
 // change to right path on your computer
-string parameterFile = "PATH TO /Drone_Cam.yaml";
-string vocFile = "/home/hostname/ORB_SLAM2/Vocabulary/ORBvoc.txt";
+string parameterFile = "PATH TO Drone_Cam.yaml";
+string vocFile = "/home/usr_name/ORB_SLAM2/Vocabulary/ORBvoc.txt";
 
 // video file
-string videoFile = "PATH TO /flight_video_indoor.avi";
+string videoFile = "PATH TO video";
 
 int main(int argc, char **argv) {
 

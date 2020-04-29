@@ -1,5 +1,0 @@
-The CmakeLists.txt in this folder has 4 complementary lines for supporting video running.
-
-Replace the CmakeLists.txt in source code ORBSLAM2 with this one.
-
-Change to the right PATH in myvideo.cpp of the Drone_Cam.yaml and video.
