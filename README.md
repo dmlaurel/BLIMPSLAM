@@ -30,4 +30,7 @@ ReadIMU requires an Arduino UNO (LINK)
 
 record_data requires a Raspberry PI 3 (LINK)
 
+Third Party Repositories: 
+ORB SLAM: https://github.com/raulmur/ORB_SLAM2
+
 
