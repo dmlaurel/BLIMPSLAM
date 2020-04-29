@@ -1,0 +1,6 @@
+[submodule "ORB-SLAM"]
+	path = ORB-SLAM
+	url = https://github.com/raulmur/ORB_SLAM2.git
+[submodule "ORB_SLAM2"]
+	path = ORB_SLAM2
+	url = https://github.com/raulmur/ORB_SLAM2.git
