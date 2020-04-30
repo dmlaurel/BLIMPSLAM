@@ -1,5 +1,5 @@
 # BLIMPSLAM
-In this work, Drone Localization using [ORBSLAM2]https://github.com/raulmur/ORB_SLAM2 and EKF-Based SensorFusion is investigated. We provide code for dataset collection and integration, visual slam implementation using monocular ORB slam and a EKF sensor fusion class for correction using IMU measurements. 
+In this work, Drone Localization using [ORBSLAM2](https://github.com/raulmur/ORB_SLAM2) and EKF-Based SensorFusion is investigated. We provide code for dataset collection and integration, visual slam implementation using monocular ORB slam and a EKF sensor fusion class for correction using IMU measurements. 
 
 ## HARDWARE REQUIREMENTS
 
