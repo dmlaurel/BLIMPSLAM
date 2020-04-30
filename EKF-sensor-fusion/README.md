@@ -1,10 +1,14 @@
 # EKF Sensor Fusion
 
-To compile, run the following command in the terminal: 
+To compile, run the following command in the terminal
+```
 g++ -I /usr/include/eigen3 test.cpp EkfSensorFusionClass.cpp -o test
+```
 
-To install Eigen3, run the following command in the terminal:
+To install Eigen3, run the following command in the terminal
+```
 sudo apt install libeigen3-dev
+```
 
 `EkfSensorFusionClass.h` and `EkfSensorFusionClass.cpp` include all the class information needed to perfrom sensor fusion of IMU and ORB_SLAM2.
 
