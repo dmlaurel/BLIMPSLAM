@@ -38,7 +38,7 @@ Files created by author gaoxiang12@github.com
 
 CMakeLists.txt is added with 4 lines in the bottom to support running a video
 
-If you want to run a video_ORBSLAM, replace the `CMakeLists.txt` in ORBSLAM with this one or add the 4 lines in it. Move `myvideo.cpp` and Drone_Cam.yaml to 
+If you want to run a video_ORBSLAM, replace the `CMakeLists.txt` in ORBSLAM with this one or add the 4 lines in it. Move `myvideo.cpp` and 'Drone_Cam.yaml' to 
 ```
 ORB_SLAM2/Example/Monocular
 ```
@@ -72,7 +72,7 @@ The EkfSensorFusion Class is built to merge IMU and ORB_SLAM2 pose information t
 
 ### Test
 
-test.cpp read the IMU and ORB_SLAM2 data, matches them  to perform sensor fusion according  to the time stamps.
+`test.cpp` reads the IMU and ORB_SLAM2 data, and matches them  to perform sensor fusion according  to the time stamps. 
 
 If you want to test the class on the data collected from IMU and ORB_SLAM2, use g++ command to compile both `test.cpp` and `EkfSensorFusionClass.cpp` and run test in your folder .
 
@@ -83,4 +83,5 @@ g++ -I /usr/include/eigen3 test.cpp EkfSensorFusionClass.cpp -o test
 If you want to change the data being tested, adjust the form of your data as `Interpolated_paused_start_indoor_processed.txt` for IMU data and `KeyFrameTrajectory_paused.txt` for ORB_SLAM2 data. Then move the data file of `.txt` to the folder. For `test.cpp` file, change `filename` and `num1`, `num2`, the number of rows correspondingly.
 
 # Contributing
-This is the  project of Team 13, supported by the class ROB530/ EECS568/ NA568: Mobile Robotics, Winter 2020 in University of Michigan. Duncan Abbot has contributed to drone configuration, camera calibration, video and data collection. Ahmed Alkatheeri and Hao Weng has implemented and debugged the amazing sensor fusion code. Annet George and Chengfeng Xu has done research and studying on ORB SLAM system configuration, data processing, performance analysis and trajectory plotting.
+This is the  project of Team 13, supported by the class ROB530/ EECS568/ NA568: Mobile Robotics, Winter 2020 in University of Michigan. 
+Duncan Abbot has contributed to drone configuration, camera calibration, video and data collection. Ahmed Alkatheeri and Hao Weng has implemented and debugged the amazing sensor fusion code. Annet George and Chengfeng Xu has done research and studying on ORB SLAM system configuration, data processing, performance analysis and trajectory plotting.
