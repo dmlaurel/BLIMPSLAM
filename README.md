@@ -1,7 +1,7 @@
 # BLIMPSLAM
 In this work, Drone Localization using [ORBSLAM2]https://github.com/raulmur/ORB_SLAM2 and EKF-Based SensorFusion is investigated. We provide code for dataset collection and integration, visual slam implementation using monocular ORB slam and a EKF sensor fusion class for correction using IMU measurements. 
 
-# HARDWARE REQUIREMENTS
+## HARDWARE REQUIREMENTS
 
 Data Gathering:
 
@@ -9,7 +9,7 @@ ReadIMU requires an Arduino UNO (LINK)
 
 record_data requires a Raspberry PI 3 (LINK)
 
-# SOFTWARE REQUIREMENTS
+## SOFTWARE REQUIREMENTS
 Data Gathering:
 
 ReadIMU requires the following libraries to be installed for Arduino
@@ -31,7 +31,7 @@ record_data.py must be run with Python3
 * keyboard
 
 
-# ORB SLAM 2
+## ORB SLAM 2
 The ORBSLAM2 library was used for visual SLAM:
 ORB SLAM: https://github.com/raulmur/ORB_SLAM2
 
@@ -55,7 +55,7 @@ chmod +x build.sh
 cd ORB_SLAM2/Example/Monocular
 ./myvideo
 ```
-## Prerequisites for ORB SLAM
+### Prerequisites for ORB SLAM
 
 * C++11 or C++0x Compiler
 * Pangolin: https://github.com/stevenlovegrove/Pangolin.
