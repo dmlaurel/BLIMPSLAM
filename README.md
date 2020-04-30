@@ -32,8 +32,7 @@ record_data.py must be run with Python3
 
 
 ## ORB SLAM 2
-The ORBSLAM2 library was used for visual SLAM:
-ORB SLAM: https://github.com/raulmur/ORB_SLAM2
+The ORBSLAM2 library was used for visual SLAM:https://github.com/raulmur/ORB_SLAM2
 
 Files created by author gaoxiang12@github.com
 
