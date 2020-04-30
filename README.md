@@ -65,7 +65,7 @@ cd ORB_SLAM2/Example/Monocular
 ## EKF Sensor Fusion
 The EkfSensorFusion Class is built to merge IMU and ORB_SLAM2 pose information to obtain a position estimate of the drone, in which Extended Kalman Filter (EKF) is used. 
 
-`EkfSensorFusion.h` and `EkfSensorFusion.cpp` include all the class information needed to perfrom sensor fusion of IMU and ORB_SLAM2. Call function `apply_sensorFusion(double time, VectorXf imu_meas, VectorXf cam_meas)` or call functions `prediction( )`, `correction_imu(double time, VectorXf imu_meas)`, `correction_cam(VectorXf cam_meas)` seperately to achieve EKF Sensor Fusion.
+`EkfSensorFusion.h` and `EkfSensorFusion.cpp` include all the class information needed to perfrom sensor fusion of IMU and ORB_SLAM2. Call function `apply_sensorFusion(double time, VectorXf imu_meas, VectorXf cam_meas)` or call functions `prediction()`, `correction_imu(double time, VectorXf imu_meas)`, `correction_cam(VectorXf cam_meas)` seperately to achieve EKF Sensor Fusion.
 
 ### Prerequisites for EkfSensorFusion Class
 
