@@ -3,14 +3,15 @@ In this work, Drone Localization using [ORBSLAM2](https://github.com/raulmur/ORB
 
 ## HARDWARE REQUIREMENTS
 
-Data Gathering:
+# Data Gathering
 
 ReadIMU requires an [Arduino UNO](https://store.arduino.cc/usa/arduino-uno-rev3)
 
 record_data requires a [Raspberry PI 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
 
 ## SOFTWARE REQUIREMENTS
-Data Gathering:
+
+# Data Gathering:
 
 ReadIMU requires the following libraries to be installed for Arduino
 
