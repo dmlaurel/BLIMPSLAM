@@ -20,8 +20,8 @@ ReadIMU requires the following libraries to be installed for Arduino
 * SoftwareSerial
 * I2C
 
-record_data.py requies the following libraries to be installed for the Raspberry PI (use pip3)
-record_data.py must be run with Python3
+`record_data.py` requies the following libraries to be installed for the Raspberry PI (use pip3)
+`record_data.py` must be run with Python3
 
 * numpy
 * cv2
@@ -36,9 +36,9 @@ The ORBSLAM2 library was used for visual SLAM:https://github.com/raulmur/ORB_SLA
 
 Files created by author gaoxiang12@github.com
 
-CMakeLists.txt is added with 4 lines in the bottom to support running a video
+`CMakeLists.txt` is added with 4 lines in the bottom to support running a video
 
-If you want to run a video_ORBSLAM, replace the `CMakeLists.txt` in ORBSLAM with this one or add the 4 lines in it. Move `myvideo.cpp` and 'Drone_Cam.yaml' to 
+If you want to run a video_ORBSLAM, replace the `CMakeLists.txt` in ORBSLAM with this one or add the 4 lines in it. Move `myvideo.cpp` and `Drone_Cam.yaml` to 
 ```
 ORB_SLAM2/Example/Monocular
 ```
@@ -63,7 +63,9 @@ cd ORB_SLAM2/Example/Monocular
 * DBoW2 and g2o (Included in Thirdparty folder of ORB)
 
 ## EKF Sensor Fusion
-The EkfSensorFusion Class is built to merge IMU and ORB_SLAM2 pose information to obtain a position estimate of the drone, in which Extended Kalman Filter (EKF) is used.
+The EkfSensorFusion Class is built to merge IMU and ORB_SLAM2 pose information to obtain a position estimate of the drone, in which Extended Kalman Filter (EKF) is used. 
+
+`EkfSensorFusion.h` and `EkfSensorFusion.cpp` include all the class information needed to perfrom sensor fusion of IMU and ORB_SLAM2. Call function `apply_sensorFusion(double time, VectorXf imu_meas, VectorXf cam_meas)` or call functions `prediction( )`, `correction_imu(double time, VectorXf imu_meas)`, `correction_cam(VectorXf cam_meas)` seperately to achieve EKF Sensor Fusion.
 
 ### Prerequisites for EkfSensorFusion Class
 
@@ -72,9 +74,9 @@ The EkfSensorFusion Class is built to merge IMU and ORB_SLAM2 pose information t
 
 ### Test
 
-`test.cpp` reads the IMU and ORB_SLAM2 data, and matches them  to perform sensor fusion according  to the time stamps. 
+`test.cpp` includes `readFile.h` to read the IMU and ORB_SLAM2 data, and matches them  to perform sensor fusion according  to the time stamps. 
 
-If you want to test the class on the data collected from IMU and ORB_SLAM2, use g++ command to compile both `test.cpp` and `EkfSensorFusionClass.cpp` and run test in your folder .
+If you want to test the class on the data collected from IMU and ORB_SLAM2, use g++ command to compile both `test.cpp` and `EkfSensorFusionClass.cpp` and run `test` in your folder .
 
 ```
 g++ -I /usr/include/eigen3 test.cpp EkfSensorFusionClass.cpp -o test
