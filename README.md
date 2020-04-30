@@ -1,17 +1,17 @@
 # BLIMPSLAM
 In this work, Drone Localization using [ORBSLAM2](https://github.com/raulmur/ORB_SLAM2) and EKF-Based SensorFusion is investigated. We provide code for dataset collection and integration, visual slam implementation using monocular ORB slam and an EKF sensor fusion class for correction using IMU measurements. 
 
-## HARDWARE REQUIREMENTS
+# HARDWARE REQUIREMENTS
 
-Data Gathering:
+## Data Gathering:
 
 ReadIMU requires an [Arduino UNO](https://store.arduino.cc/usa/arduino-uno-rev3)
 
 record_data requires a [Raspberry PI 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
 
-## SOFTWARE REQUIREMENTS
+# SOFTWARE REQUIREMENTS
 
-Data Gathering:
+## Data Gathering:
 
 ReadIMU requires the following libraries to be installed for Arduino
 
